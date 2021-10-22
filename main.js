@@ -1,6 +1,6 @@
 // vars declaration for the elements involved in the script.
 
-const hamOpenBtn = document.querySelector(".header-right>a");
+const hamOpenBtn = document.querySelector(".header-right > a");
 const hamCloseBtn = document.querySelector(".close");
 const hamContent = document.querySelector(".hamburger-menu");
 
@@ -9,13 +9,13 @@ const hamContent = document.querySelector(".hamburger-menu");
 hamOpenBtn.addEventListener('click',
 
     function() {
-        hamContent.style.display = "block";
-    }    
+        hamContent.className = hamContent.classList + " active";
+    }
 );
 
 hamCloseBtn.addEventListener('click',
 
     function() {
-        hamContent.style.display = "none";
-    }    
+        hamContent.className = "hamburger-menu";
+    }
 );
